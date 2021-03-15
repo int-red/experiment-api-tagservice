@@ -1,0 +1,38 @@
+﻿[
+  {
+    "namespace": "tagservice",
+    "functions": [
+      {
+        "name": "AddTag",
+        "type": "function",
+        "description": "add tag to tag list.",
+        "async": false,
+        "parameters": [
+          {
+            "name": "tag",
+            "type": "object",
+            "description": "MessageTag object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "description": "key of new tag. Distinct tag identifier - use this string when referring to a tag."
+              },
+              "tag": {
+                "type": "string",
+                "description": "description of new tag. Human-readable tag name."
+              },
+              "color": {
+                "type": "string",
+                "description": "color of new tag"
+              },
+              "ordinal": {
+                "type": "string",
+                "description": "Custom sort string (usually empty)"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
